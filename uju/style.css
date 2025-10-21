@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.header {
+  background-color: #0A2140; /* Stanbic IBTC deep blue */
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.header img {
+  height: 40px;
+  width: 40px;
+}
+h1 {
+  color: white;
+  font-size: 18px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header-icons {
+  display: flex;
+  gap: 15px;
+}
+.hero {
+  background-color: #0A2140;
+  height: 250px;
+}
+.acct-balance {
+  height: 100px;
+  background-color: #F6F8FA; /* light background */
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+main {
+  background-color: white;
+}
+#forward-arrow {
+  color: #00529B; /* accent blue arrow */
+  border: 1px solid #00529B;
+  border-radius: 100%;
+  padding: 6px;
+  width: 15px;
+  text-align: center;
+  margin-left: 25px;
+  margin-top: -15px;
+}
+.figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.figure img {
+  width: 30px;
+}
+.balance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  background-color: #F6F8FA;
+  margin: -15px auto 25px;
+  border-radius: 10px;
+  height: 250px;
+  padding-top: 55px;
+}
+.balance-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding: 10px 20px;
+}
+.balance-heading img {
+  width: 30px;
+}
+.plus {
+  display: flex;
+  padding-top: 25px;
+  gap: 25px;
+  align-items: center;
+}
+.paragraph {
+  display: block;
+}
+.services {
+  height: 180px;
+  width: 80%;
+  background-color: #F6F8FA;
+  border-radius: 10px;
+  margin: 0 auto 30px;
+  padding-top: 20px;
+}
+.services h3 {
+  padding: 10px 20px;
+  color: #0A2140;
+}
+.service {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 20px;
+}
+.service-box {
+  text-align: center;
+}
+.service-box p {
+  width: 70px;
+  color: #0A2140;
+}
+.service-box img {
+  width: 50px;
+  /* Change icons to accent blue */
+  filter: brightness(0) saturate(100%) invert(24%) sepia(63%) saturate(4059%) hue-rotate(184deg) brightness(97%) contrast(101%);
+}
+.box {
+  border: 1px solid rgb(226, 222, 222);
+  border-radius: 10px;
+  text-align: center;
+  width: 70px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #F6F8FA;
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.footer-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: #0A2140;
+}
+footer img {
+  width: 30px;
+  height: 30px;
+}
+/* ===========================
+   📱 Mobile View Adjustments
+   =========================== */
+@media (max-width: 600px) {
+
+  /* General layout */
+  body {
+    font-size: 14px;
+  }
+
+  .header {
+    height: 70px;
+    padding: 8px 15px;
+  }
+
+  .header img {
+    height: 30px;
+    width: 30px;
+  }
+
+  h1 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .profile {
+    gap: 10px;
+  }
+
+  .header-icons {
+    gap: 10px;
+  }
+
+  .hero {
+    height: 200px;
+  }
+
+  .acct-balance {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .figure h3 {
+    font-size: 16px;
+  }
+
+  #forward-arrow {
+    width: 12px;
+    padding: 4px;
+    margin-left: 15px;
+  }
+
+  .balance {
+    width: 90%;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .balance-heading {
+    gap: 15px;
+  }
+
+  .balance-heading h2 {
+    font-size: 16px;
+  }
+
+  .services {
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .service {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .service-box {
+    width: 45%;
+  }
+
+  .service-box img {
+    width: 40px;
+  }
+
+  footer {
+    padding: 8px 0;
+  }
+
+  .footer-img {
+    justify-content: space-evenly;
+  }
+
+  .footer-icon img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer-icon p {
+    font-size: 12px;
+  }
+}
