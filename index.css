@@ -182,3 +182,139 @@ footer img {
   width: 30px;
   height: 30px;
 }
+/* ==============================
+   📱 Mobile Responsive Styling
+   ============================== */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Header */
+  .header {
+    height: 70px;
+    padding: 8px 15px;
+    flex-direction: row;
+  }
+
+  .header img {
+    height: 30px;
+    width: 30px;
+  }
+
+  h1 {
+    font-size: 8px;
+    text-align: center;
+  }
+
+  .profile {
+    gap: 10px;
+  }
+
+  .header-icons {
+    gap: 10px;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: 200px;
+  }
+
+  .acct-balance {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .acct-balance p {
+    font-size: 13px;
+  }
+
+  .figure h3 {
+    font-size: 16px;
+  }
+
+  #forward-arrow {
+    width: 12px;
+    padding: 4px;
+    margin-left: 15px;
+  }
+
+  /* Balance Section */
+  .balance {
+    width: 90%;
+    height: auto;
+    padding: 20px 0;
+    margin-top: -10px;
+  }
+
+  .balance-heading {
+    gap: 20px;
+  }
+
+  .balance-heading h2 {
+    font-size: 16px;
+  }
+
+  .balance-heading img {
+    width: 25px;
+  }
+
+  .plus {
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 15px;
+  }
+
+  .plus p {
+    font-size: 12px;
+  }
+
+  /* Services Section */
+  .services {
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .services h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .service {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .service-box {
+    width: 45%;
+  }
+
+  .service-box img {
+    width: 40px;
+  }
+
+  .service-box p {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    padding: 8px 0;
+  }
+
+  .footer-img {
+    justify-content: space-evenly;
+  }
+
+  .footer-icon img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer-icon p {
+    font-size: 12px;
+  }
+}
